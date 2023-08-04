@@ -1,3 +1,10 @@
+fn main() {
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).unwrap();
+    let n = input.trim().parse::<i32>().unwrap();
+    println!("{}", fibonacci(n));
+}
+
 fn fibonacci(n: i32) -> i32 {
     if n <= 1 {
         return n;
@@ -8,11 +15,4 @@ fn fibonacci(n: i32) -> i32 {
         (a, b) = (b, a + b);
     }
     b
-}
-
-fn main() {
-    let mut input = String::new();
-    std::io::stdin().read_line(&mut input).unwrap();
-    let n = input.trim().parse::<i32>().unwrap();
-    println!("{}", fibonacci(n));
 }
