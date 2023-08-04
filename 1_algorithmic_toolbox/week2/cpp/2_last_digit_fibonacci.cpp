@@ -4,13 +4,13 @@ int fibonacci(int n)
 {
   if (n <= 1) return n;
 
-  int a { 1 }, b { 0 };
+  int a { 0 }, b { 1 };
   while (--n) {
-    a = a + b;
-    b = a - b;
-    a %= 10;
+    b = a + b;
+    a = b - a;
+    b %= 10;
   }
-  return a;
+  return b;
 }
 
 int main()

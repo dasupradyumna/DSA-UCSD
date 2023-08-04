@@ -3,13 +3,11 @@ fn fibonacci(n: i32) -> i32 {
         return n;
     }
 
-    let (mut a, mut b) = (1, 0);
+    let (mut a, mut b) = (0, 1);
     for _ in 0..n - 1 {
-        a = a + b;
-        b = a - b;
-        a %= 10;
+        (a, b) = (b, (a + b) % 10);
     }
-    a
+    b
 }
 
 fn main() {
