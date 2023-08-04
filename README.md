@@ -10,3 +10,16 @@ set of lectures and programming assignments.
 4. [Algorithms on Strings](https://www.coursera.org/learn/algorithms-on-strings?specialization=data-structures-algorithms)
 5. [Advanced Algorithms and Complexity](https://www.coursera.org/learn/advanced-algorithms-and-complexity?specialization=data-structures-algorithms)
 6. [Genome Assembly Programming Challenge](https://www.coursera.org/learn/assembling-genomes?specialization=data-structures-algorithms)
+
+### Info
+
+C++ files should be compiled with the following command:
+
+```bash
+g++ -pipe -O2 -std=c++11 "<filename>"
+```
+
+#### TODO
+
+- [ ] Move stress testing function out of the main scripts
+- [ ] Add multithreading to the testing process for speedup

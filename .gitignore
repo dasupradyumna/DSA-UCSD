@@ -1,7 +1,9 @@
 # C++ test binaries
-bin
+test/cpp/bin
 
-# cargo test package
-dev
+# Rust test binaries
+test/rust/target
+Cargo.lock
 
+# Miscellaneous
 material
