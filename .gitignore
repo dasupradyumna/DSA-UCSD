@@ -5,5 +5,8 @@ test/cpp/bin
 test/rust/target
 Cargo.lock
 
+# Python cache
+__pycache__
+
 # Miscellaneous
 material

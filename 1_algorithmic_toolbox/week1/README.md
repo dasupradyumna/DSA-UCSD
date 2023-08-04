@@ -1,10 +1,10 @@
 # Week 1
 
-## Sum of 2 Digits
+## 1. Sum of 2 Digits
 
 Self-explanatory.
 
-## Maximum Pairwise Product
+## 2. Maximum Pairwise Product
 
 ### Slow Naive method
 

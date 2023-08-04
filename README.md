@@ -11,6 +11,9 @@ set of lectures and programming assignments.
 5. [Advanced Algorithms and Complexity](https://www.coursera.org/learn/advanced-algorithms-and-complexity?specialization=data-structures-algorithms)
 6. [Genome Assembly Programming Challenge](https://www.coursera.org/learn/assembling-genomes?specialization=data-structures-algorithms)
 
+This repository contains solutions to all assignments from the above courses, written in 3
+programming languages: C++, Rust and Python. Stress testing framework is also provided.
+
 ### Info
 
 C++ files should be compiled with the following command:

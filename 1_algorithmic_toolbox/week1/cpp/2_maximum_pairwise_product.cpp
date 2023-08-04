@@ -1,6 +1,7 @@
 #include <functional>
 #include <iostream>
 #include <numeric>
+#include <vector>
 
 using ll = long long;
 using sz = unsigned long;
@@ -57,13 +58,25 @@ ll maximum_pairwise_product_fastest(const std::vector<int> &sequence)
   return static_cast<ll>(largest_path[0]) * second_largest;
 }
 
-#ifdef STRESS_TEST
+#ifndef STRESS_TEST
+
+int main()
+{
+  int n {};
+  std::cin >> n;
+  std::vector<int> sequence(n);
+  for (int i { 0 }; i < n; ++i) std::cin >> sequence[i];
+
+  std::cout << maximum_pairwise_product_fastest(sequence) << '\n';
+}
+
+#else
 
  #include "stress_test.hpp"
 
 int main()
 {
-  RNG<int> rng;
+  Rng<int> rng;
   rng.add_dist(2, 1e3);
   rng.add_dist(0, 2e5);
   ll n_tests { 0 };
@@ -76,25 +89,13 @@ int main()
     ll fast { maximum_pairwise_product_fastest(sequence) };
 
     if (fast != slow) {
-      std::cout << "\n\nTest failed!\nn = " << n << "\n[ ";
+      std::cout << "\n\nTest failed!\nn = " << n << '\n';
       print_vec(sequence);
-      std::cout << "]\nResult: (slow) " << slow << ", (fast) " << fast << '\n';
+      std::cout << "Result: (slow) " << slow << ", (fast) " << fast << '\n';
       break;
     }
     std::cout << "\rTests passed: " << ++n_tests;
   }
-}
-
-#else
-
-int main()
-{
-  int n {};
-  std::cin >> n;
-  std::vector<int> sequence(n);
-  for (int i { 0 }; i < n; ++i) std::cin >> sequence[i];
-
-  std::cout << maximum_pairwise_product_fastest(sequence) << '\n';
 }
 
 #endif

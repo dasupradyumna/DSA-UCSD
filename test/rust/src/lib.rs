@@ -1,14 +1,14 @@
 use rand::distributions::{uniform, Distribution, Uniform};
 use rand::rngs;
 
-pub struct RNG<'a, T>
+pub struct Rng<'a, T>
 where
     T: uniform::SampleUniform,
 {
     rng: &'a mut rngs::ThreadRng,
     dists: Vec<Uniform<T>>,
 }
-impl<'a, T> RNG<'a, T>
+impl<'a, T> Rng<'a, T>
 where
     T: uniform::SampleUniform,
 {
