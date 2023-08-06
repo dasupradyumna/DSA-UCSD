@@ -42,3 +42,7 @@ From this observation, we arrive at the formula : **SS<sub>N</sub> = F<sub>N</su
 ## 7. GCD of 2 Integers
 
 Classic Euclidean Algorithm.
+
+## 8. LCM of 2 Integers
+
+Use the formula: **LCM(a, b) = (a x b) / GCD(a, b)**
