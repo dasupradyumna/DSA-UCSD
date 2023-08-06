@@ -38,3 +38,7 @@ derive a formula for the sum of squares of Fibonacci numbers. Since the square o
 is the area of its corresponding geometrical square, the sum of squares will be the total area of
 stacked squares structure.  
 From this observation, we arrive at the formula : **SS<sub>N</sub> = F<sub>N</sub> x F <sub>N+1**
+
+## 7. GCD of 2 Integers
+
+Classic Euclidean Algorithm.
