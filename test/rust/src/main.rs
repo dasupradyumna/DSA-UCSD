@@ -5,7 +5,7 @@ fn main() {
     // main logic
 }
 
-fn read_lines(input: &mut String, n_lines: i32) {
+fn read_lines(input: &mut String, n_lines: i64) {
     for _ in 0..n_lines {
         std::io::stdin().read_line(input).unwrap();
     }
