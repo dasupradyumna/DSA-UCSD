@@ -3,3 +3,9 @@
 ## 1. Money Change
 
 Straightforward calculation; one-liner solution.
+
+## 2. Fractional Knapsack Problem
+
+Sort both the costs and the weights in the descending order of rates (**rate = cost / weight**).
+Iterate through this array, keep adding the item until capacity becomes zero. This algorithm is
+greedy, and is of **O(nlogn)** time complexity.
