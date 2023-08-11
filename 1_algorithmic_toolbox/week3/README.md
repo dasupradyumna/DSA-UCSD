@@ -15,3 +15,8 @@ greedy, and is of **O(nlogn)** time complexity.
 Every time the car refuels, travel the maximum possible distance and refuel at a stop only if the
 next stop cannot be reached. If the distance between any two stops is more than the mileage, then
 the journey is impossible. The algorithm is **linear** in time.
+
+## 4. Maximum Advertisement Revenue
+
+Sort both the ad prices and number of clicks, and pair them up correspondingly. This algorithm takes
+**O(nlogn)** time.
