@@ -20,3 +20,21 @@ the journey is impossible. The algorithm is **linear** in time.
 
 Sort both the ad prices and number of clicks, and pair them up correspondingly. This algorithm takes
 **O(nlogn)** time.
+
+## 5. Collecting Signaturees
+
+### Check pairwise
+
+Select a time period, find all time periods that overlap with the selected time period and pick the
+smallest ending time of all the overlapping time periods. Remove all overlapping time periods then.
+Repeat this process and populate a list with the smallest ending time in every such iteration until
+no time period is left.  
+Worst case time complexity: **O(n<sup>2</sup>)**
+
+### Sort by ending time
+
+Sort all the time periods by the ending time. Pick the ending time of the first time period as the
+first visit time. Then, start iterating through the sorted list of time periods until the starting
+time of the current time period is greater than the current overlap's ending time. Update the
+current overlap and repeat the above process until the entire list is exhausted.  
+Worst case time complexity: **O(nlogn)**
