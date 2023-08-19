@@ -38,3 +38,7 @@ first visit time. Then, start iterating through the sorted list of time periods 
 time of the current time period is greater than the current overlap's ending time. Update the
 current overlap and repeat the above process until the entire list is exhausted.  
 Worst case time complexity: **O(nlogn)**
+
+## 6. Maximum Number of Prizes
+
+Find the maximum integer **k** for which sum of all integers from 1 to **k** does not exceed **n**.
