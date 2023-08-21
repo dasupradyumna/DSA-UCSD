@@ -41,4 +41,12 @@ Worst case time complexity: **O(nlogn)**
 
 ## 6. Maximum Number of Prizes
 
-Find the maximum integer **k** for which sum of all integers from 1 to **k** does not exceed **n**.
+Get the maximum integer **a** such that sum of all integers from 1 to **a** does not exceed **n**.
+
+## 7. Largest Concatenation
+
+Simply sort the list of integers using a custom comparator function; where given 2 integers **a**
+and **b**, **a** is sorted to the left of **b** if the concatenated number **ab** is greater than or
+equal to **ba**, and to the right otherwise. The integers in the sorted list can simply be
+concatenated together for the final number.  
+Time complexity is **O(nlogn)**.
