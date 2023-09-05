@@ -18,3 +18,11 @@ Sort the sequence. Iterate through the sorted sequence once and get the count of
 occuring number. If this count is greater than half the length of the sequence, then and only then
 is that element a majority element of the sequence. Else, the sequence has no majority element.  
 Time complexity is **O(nlogn)**.
+
+## 4. Improving QuickSort (with Duplicates)
+
+Instead of the classical 2-partition, create 3-partition in each iteration where each partition
+corresponds to lesser than, equal to and greater than the pivot. By creating a separate partition
+for elements that are equal to pivot, we prevent the worst case time complexity from becoming
+**quadratic**.  
+Time complexity is **O(nlogn)**.
